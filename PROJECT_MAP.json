@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-30T14:47:11.360Z",
+  "project": "powershell-profile",
+  "root": ".",
+  "method": "static-local-index",
+  "limitations": [
+    "Нет динамических вызовов и сетевых интеграций",
+    "Сверять sha256 и evidence.line с текущими исходниками",
+    "Наличие зависимости не доказывает работоспособность"
+  ],
+  "nodes": [
+    {
+      "id": "project:powershell-profile",
+      "type": "project",
+      "name": "powershell-profile"
+    },
+    {
+      "id": "project:powershell-profile/file:README.md",
+      "type": "file",
+      "path": "README.md",
+      "sha256": "c85d27080152500df84007ec959f3eae5a06c25e25bd5c17c3aefa34133b8381",
+      "bytes": 1785
+    },
+    {
+      "id": "project:powershell-profile/file:dump-git-changes.cjs",
+      "type": "file",
+      "path": "dump-git-changes.cjs",
+      "sha256": "b7a65e54478d04b40c4c117dedcd26c822c47317148d1f31d459843a4de6e523",
+      "bytes": 9058
+    },
+    {
+      "id": "project:powershell-profile/file:profile/Microsoft.PowerShell_profile.ps1",
+      "type": "file",
+      "path": "profile/Microsoft.PowerShell_profile.ps1",
+      "sha256": "a2dd2cff810920f890d08817cae80e5286f52d82e7737ba42189060ed0e89333",
+      "bytes": 4519
+    },
+    {
+      "id": "project:powershell-profile/file:scripts/README.md",
+      "type": "file",
+      "path": "scripts/README.md",
+      "sha256": "6a6c509dff148ca552596da156561b688b451727710a0901d7bb9213a479c650",
+      "bytes": 585
+    },
+    {
+      "id": "project:powershell-profile/file:scripts/install.ps1",
+      "type": "file",
+      "path": "scripts/install.ps1",
+      "sha256": "532bbedd5d308afb5644081f7f7ed8d35dff320559ffe853efdd97b94daf0025",
+      "bytes": 1750
+    }
+  ],
+  "edges": [
+    {
+      "source": "project:powershell-profile",
+      "target": "project:powershell-profile/file:README.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "README.md"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:powershell-profile",
+      "target": "project:powershell-profile/file:dump-git-changes.cjs",
+      "relation": "contains",
+      "evidence": {
+        "path": "dump-git-changes.cjs"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:powershell-profile",
+      "target": "project:powershell-profile/file:profile/Microsoft.PowerShell_profile.ps1",
+      "relation": "contains",
+      "evidence": {
+        "path": "profile/Microsoft.PowerShell_profile.ps1"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:powershell-profile",
+      "target": "project:powershell-profile/file:scripts/README.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "scripts/README.md"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:powershell-profile",
+      "target": "project:powershell-profile/file:scripts/install.ps1",
+      "relation": "contains",
+      "evidence": {
+        "path": "scripts/install.ps1"
+      },
+      "method": "filesystem"
+    }
+  ]
+}
