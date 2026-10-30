@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-30T14:47:11.360Z",
+  "project": "pwsh-dev-env",
+  "root": ".",
+  "method": "static-local-index",
+  "limitations": [
+    "Нет динамических вызовов и сетевых интеграций",
+    "Сверять sha256 и evidence.line с текущими исходниками",
+    "Наличие зависимости не доказывает работоспособность"
+  ],
+  "nodes": [
+    {
+      "id": "project:pwsh-dev-env",
+      "type": "project",
+      "name": "pwsh-dev-env"
+    },
+    {
+      "id": "project:pwsh-dev-env/file:README.md",
+      "type": "file",
+      "path": "README.md",
+      "sha256": "f91285c35e9e793b939b1058e70c49c412a592a4a3b62fb89f92a69192b91933",
+      "bytes": 1345
+    },
+    {
+      "id": "project:pwsh-dev-env/file:profile/Microsoft.PowerShell_profile.ps1",
+      "type": "file",
+      "path": "profile/Microsoft.PowerShell_profile.ps1",
+      "sha256": "a18f4f5dda45741ff1f8fa0030c873844272d287c53f29c6698a12336c44bd39",
+      "bytes": 1662
+    },
+    {
+      "id": "project:pwsh-dev-env/file:scripts/README.md",
+      "type": "file",
+      "path": "scripts/README.md",
+      "sha256": "6a6c509dff148ca552596da156561b688b451727710a0901d7bb9213a479c650",
+      "bytes": 585
+    },
+    {
+      "id": "project:pwsh-dev-env/file:scripts/install.ps1",
+      "type": "file",
+      "path": "scripts/install.ps1",
+      "sha256": "532bbedd5d308afb5644081f7f7ed8d35dff320559ffe853efdd97b94daf0025",
+      "bytes": 1750
+    }
+  ],
+  "edges": [
+    {
+      "source": "project:pwsh-dev-env",
+      "target": "project:pwsh-dev-env/file:README.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "README.md"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:pwsh-dev-env",
+      "target": "project:pwsh-dev-env/file:profile/Microsoft.PowerShell_profile.ps1",
+      "relation": "contains",
+      "evidence": {
+        "path": "profile/Microsoft.PowerShell_profile.ps1"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:pwsh-dev-env",
+      "target": "project:pwsh-dev-env/file:scripts/README.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "scripts/README.md"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:pwsh-dev-env",
+      "target": "project:pwsh-dev-env/file:scripts/install.ps1",
+      "relation": "contains",
+      "evidence": {
+        "path": "scripts/install.ps1"
+      },
+      "method": "filesystem"
+    }
+  ]
+}
