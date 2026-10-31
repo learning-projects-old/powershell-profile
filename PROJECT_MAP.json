@@ -19,15 +19,15 @@
       "id": "project:pwsh-dev-env/file:README.md",
       "type": "file",
       "path": "README.md",
-      "sha256": "f91285c35e9e793b939b1058e70c49c412a592a4a3b62fb89f92a69192b91933",
-      "bytes": 1345
+      "sha256": "c85d27080152500df84007ec959f3eae5a06c25e25bd5c17c3aefa34133b8381",
+      "bytes": 1785
     },
     {
       "id": "project:pwsh-dev-env/file:profile/Microsoft.PowerShell_profile.ps1",
       "type": "file",
       "path": "profile/Microsoft.PowerShell_profile.ps1",
-      "sha256": "a18f4f5dda45741ff1f8fa0030c873844272d287c53f29c6698a12336c44bd39",
-      "bytes": 1662
+      "sha256": "a2dd2cff810920f890d08817cae80e5286f52d82e7737ba42189060ed0e89333",
+      "bytes": 4519
     },
     {
       "id": "project:pwsh-dev-env/file:scripts/README.md",
@@ -42,6 +42,13 @@
       "path": "scripts/install.ps1",
       "sha256": "532bbedd5d308afb5644081f7f7ed8d35dff320559ffe853efdd97b94daf0025",
       "bytes": 1750
+    },
+    {
+      "id": "project:pwsh-dev-env/file:dump-git-changes.cjs",
+      "type": "file",
+      "path": "dump-git-changes.cjs",
+      "sha256": "b7a65e54478d04b40c4c117dedcd26c822c47317148d1f31d459843a4de6e523",
+      "bytes": 9058
     }
   ],
   "edges": [
@@ -78,6 +85,15 @@
       "relation": "contains",
       "evidence": {
         "path": "scripts/install.ps1"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:pwsh-dev-env",
+      "target": "project:pwsh-dev-env/file:dump-git-changes.cjs",
+      "relation": "contains",
+      "evidence": {
+        "path": "dump-git-changes.cjs"
       },
       "method": "filesystem"
     }
